@@ -1,0 +1,254 @@
+@font-face
+{
+  font-family: 'DS';
+  src: url('DancingScript-Regular.otf');
+}
+
+body
+{
+  background-color: #02010a;
+  font-family: 'DS';
+}
+
+header{top: 0;}
+
+#cabecera
+{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+  text-shadow: 2px 2px #02010a;
+  height: 5em;
+}
+
+h1
+{
+  text-align: left;
+  display: inline;
+  padding-left: 50px;
+}
+
+#cabecera nav {float: right;}
+
+#cabecera nav ul
+{
+  list-style: none;
+  margin: 0 auto;
+}
+
+#cabecera nav li
+{
+  display: inline;
+  margin: 30px;
+  font-size: 2em;
+}
+
+#cabecera nav a:link, #cabecera nav a:visited
+{
+  color: white;
+}
+
+#cabecera nav a:hover, #cabecera nav a:active
+{
+  background: #92A4AE;
+  border-radius: 5px 5px;
+}
+
+#cabecera nav .active a:link, #cabecera nav .active a:visited
+{
+  background: #4391BD;
+  border-radius: 5px 5px;
+  text-decoration: none;
+}
+
+#ImgPrincipal{background-color: #82c3a6; padding: 2% 0% 2%;}
+
+div article img
+{
+  display: block;
+  margin: auto;
+  width: 70%;
+  height: 70%;
+  box-shadow: #02010a 2px 2px;
+}
+
+.GrupoB
+{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  background-color: #d5c75f;
+}
+
+div img
+{
+  display: block;
+  margin: auto;
+  box-shadow: #02010a 2px 2px;
+}
+
+.galeriap
+{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  background-color: #d5c75f;
+  padding: 2% 0% 2%;
+}
+
+.Img1{order: 1; padding: 2% 0% 2%;}
+
+@-webkit-keyframes Tini
+{
+  from{transform: translateY(500px);}
+  to{transform: translateY(0px);}
+}
+
+@-webkit-keyframes rotacion
+{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(10deg);}
+}
+
+@-webkit-keyframes irotacion
+{
+  from{transform: rotate(10deg);}
+  to{transform: rotate(0deg);}
+}
+
+.Img2{order: 2; padding: 2% 0% 2%;}
+
+@-webkit-keyframes trasla
+{
+  from
+  {
+    transform: translate(0px, 0px);
+  }
+  to
+  {
+    transform: translate(20px, -5px);
+  }
+}
+
+@-webkit-keyframes itrasla
+{
+  from
+  {
+    transform: translate(20px, -5px);
+  }
+  to
+  {
+    transform: translate(0px, 0px);
+  }
+}
+
+.pie
+{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #C6d5c5;
+}
+
+.contacto{order: 1;}
+.termino{order: 2;}
+.redes{order: 3;}
+.derechos{order: 4;}
+
+.ip1{order: 1;}
+.ip2{order: 2;}
+.ip3{order: 3;}
+.ip4{order: 4;}
+.ip5{order: 5;}
+.ip6{order: 6;}
+
+footer article
+{
+  display: block;
+  margin: auto;
+  font-size: 1.5em;
+  margin: auto;
+}
+
+footer article h2{font-size: 2em; display: inline;}
+
+footer article p a img
+{
+  display: inline;
+  margin: auto;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.ip2, .ip4, .ip6
+{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.ip1
+{
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+
+.ip3
+{
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+@media all and (max-width: 900px)
+{
+  body{width: 100%; font-size: 8px;}
+  footer article{width: 100%; padding-left: 20%; font-size: 2.5em;}
+  footer article p a img{width: 5%;}
+  #cabecera nav li{margin: 1px !important;}
+  h1{padding-left: 0px}
+  .Img1{width: 100%;}
+  .Img2{width: 100%;}
+  div img{height: 200px; width: 80%; margin-bottom: 5%;}
+}
+
+@media all and (min-width: 900px)
+{
+  body
+  {
+    animation-name: Tini;
+    font-size: 0.7em;
+    animation-duration: 1s;
+    width: 900px;
+    margin: auto;
+  }
+  footer article{width: 20%; height: 200px; padding-left: 5%}
+  footer article p a img{width: 10%;}
+  .Img1{width: 50%;}
+  #i1:hover
+  {
+    animation-name: rotacion;
+  	animation-duration: 1s;
+    box-shadow: #82c3a6 2px 2px;
+  }
+  #i1:not(:hover)
+  {
+    animation-name: irotacion;
+  	animation-duration: 1s;
+    box-shadow: #02010a 2px 2px;
+  }
+  .Img2{width: 50%;}
+  #i2:hover
+  {
+    animation-name: trasla;
+  	animation-duration: 1s;
+    box-shadow: #82c3a6 2px 2px;
+  }
+  #i2:not(:hover)
+  {
+    animation-name: itrasla;
+  	animation-duration: 1s;
+    box-shadow: #02010a 2px 2px;
+  }
+  div img{height: 200px; width: 30%;}
+}
